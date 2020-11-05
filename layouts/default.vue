@@ -1,59 +1,35 @@
 <template>
-  <div>
-    <nav
-      class="navbar header has-shadow is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="~assets/buefy.png" alt="Buefy" height="28" />
-        </a>
+  <section>
+    <header class="header">
+      <nav
+        class="navbar has-shadow is-primary"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <nuxt-link to="/" class="navbar-item">
+            <h1 class="title">Blog</h1>
+          </nuxt-link>
+          <nuxt-link to="/" class="navbar-item ml-6">Início</nuxt-link>
+          <nuxt-link to="/posts" class="navbar-item">Postagens</nuxt-link>
 
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
+          <div class="navbar-burger">
+            <span />
+            <span />
+            <span />
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <section class="main-content columns">
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">General</p>
-        <ul class="menu-list">
-          <li v-for="(item, key) of items" :key="key">
-            <nuxt-link :to="item.to" exact-active-class="is-active">
-              <b-icon :icon="item.icon" /> {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </aside>
-
+    <section class="main-content columns mx-0">
       <div class="container column is-10">
         <nuxt />
       </div>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' },
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' },
-        },
-      ],
-    }
-  },
-}
+export default {}
 </script>
