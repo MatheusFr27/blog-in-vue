@@ -10,12 +10,6 @@ Um projeto exemplo simples para treinar e melhorar habilidades com o **Nuxt.js**
 - Visualizar Autores;
 - Ter página inicial.
 
-### Uma reflexão para seu dia!
-
-Segundo Sigmund Freud:
-
-> Somos feitos de carne, mas temos de viver como se fôssemos de ferro.
-
 ## Build Setup
 
 ```bash
